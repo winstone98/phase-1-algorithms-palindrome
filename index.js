@@ -1,9 +1,17 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  const alphanumericOnly = word.toLowerCase()
+  .match(/[a-z0-9]/g)
+  
+  return alphanumericOnly.join('') ===
+    alphanumericOnly.reverse().join('');
+  
 }
 
 /* 
   Add your pseudocode here
+  //Perfom lowercase for all the words passed.
+  //return word === reversedword
 */
 
 /*
